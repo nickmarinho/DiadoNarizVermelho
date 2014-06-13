@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_background"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/ivImageOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/ivPutNose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+    <com.lucianomarinho.diadonarizvermelho.dnv.TouchImageView
+        android:id="@+id/ivNose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/ic_nose"
+        android:visibility="invisible"
+    />
+
+    <ImageView
+        android:id="@+id/ivEngine"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_engine"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+        android:layout_below="@id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adUnitId="ca-app-pub-6309972780716096/8009891679"
+        ads:adSize="BANNER"/>
+
+</RelativeLayout>

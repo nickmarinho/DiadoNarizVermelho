@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dia do Nariz Vermelho</string>
+    <string name="app_dirname">DiadoNarizVermelho</string>
+    <string name="share_your_pic">Compartilhe Sua Foto</string>
+    <string name="share">Compartilhe</string>
+    <string name="take_picture">Tirar Foto</string>
+    <string name="choose_from_gallery">Escolher da Galeria</string>
+    <string name="select_file">Selecionar Arquivo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add_photo">Adicionar Foto!</string>
+
+    <string name="options">Opções</string>
+    <string name="save_nose">Salvar</string>
+    <string name="saved_image">Imagem Salva</string>
+    <string name="choose_another">Escolher Outra</string>
+</resources>

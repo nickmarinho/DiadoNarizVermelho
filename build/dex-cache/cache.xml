@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\dnv\build\pre-dexed\debug\classes-ad97396c5bdf907fa4856c22287c06708b35b646.jar"
+        jar="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\build\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\dnv\build\pre-dexed\debug\picasso-2.3.1-7e9625e52b4e21f0720b306080cb93ba58006eee.jar"
+        jar="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\dnv\libs\picasso-2.3.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7ed01353649330c692473b85d5c64db4218338db"/>
+    <item
+        dex="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\dnv\build\pre-dexed\debug\support-v4-19.1.0-3c04264cc4d8eadfd527d336abc1d11dfe8c7ed0.jar"
+        jar="C:\Users\luciano\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\dnv\build\pre-dexed\debug\classes-9513a2334f6f7de0e57aded3bf56c38266f9abcb.jar"
+        jar="C:\Users\luciano\AndroidStudioProjects\DiadoNarizVermelho\build\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+
+</pre-dex-items>
