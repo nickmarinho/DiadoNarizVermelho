@@ -172,9 +172,9 @@ public class MenuActivity extends ActionBarActivity {
         String imageFileName = "DNV_" + timeStamp + "_";
         File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
         File image = File.createTempFile(
-                imageFileName,  /* prefix */
-                ".jpg",         /* suffix */
-                storageDir      /* directory */
+                imageFileName,
+                ".jpg",
+                storageDir
         );
 
         mCurrentPhotoPath = image.getAbsolutePath(); // Save a file: path for use with ACTION_VIEW intents
