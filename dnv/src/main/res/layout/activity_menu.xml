@@ -28,14 +28,23 @@
         android:visibility="invisible"
         />
 
-    <com.lucianomarinho.diadonarizvermelho.dnv.TouchImageView
-        android:id="@+id/ivNose"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:focusableInTouchMode="true"
-        android:src="@drawable/ic_nose"
+        android:id="@+id/ivNoseLayout"
         android:visibility="visible"
-    />
+        >
+
+        <com.lucianomarinho.diadonarizvermelho.dnv.TouchImageView
+            android:id="@+id/ivNose"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/ic_nose"
+        />
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/ivEngine"

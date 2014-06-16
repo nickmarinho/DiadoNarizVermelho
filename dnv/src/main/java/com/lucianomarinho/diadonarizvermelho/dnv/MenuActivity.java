@@ -96,14 +96,15 @@ public class MenuActivity extends ActionBarActivity {
                 } else if (items[item].equals(getString(R.string.cancel))) {
                     ImageView ivImage = (ImageView) findViewById(R.id.ivImage);
                     ImageView ivPutNose = (ImageView) findViewById(R.id.ivPutNose);
-                    final TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
+                    RelativeLayout ivNoseLayout = (RelativeLayout) findViewById(R.id.ivNoseLayout);
+                    TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
                     ImageView ivEngine = (ImageView) findViewById(R.id.ivEngine);
                     ImageView ivImageOk = (ImageView) findViewById(R.id.ivImageOk);
                     ivImage.setVisibility(View.VISIBLE);
                     ivPutNose.setImageResource(0);
                     ivPutNose.destroyDrawingCache();
                     ivPutNose.setVisibility(View.INVISIBLE);
-                    ivNose.setVisibility(View.INVISIBLE);
+                    ivNoseLayout.setVisibility(View.INVISIBLE);
                     ivEngine.setVisibility(View.INVISIBLE);
                     ivImageOk.setImageResource(0);
                     ivImageOk.destroyDrawingCache();
@@ -132,8 +133,9 @@ public class MenuActivity extends ActionBarActivity {
                             .centerCrop()
                             .into(ivPutNose);
                     ivPutNose.setVisibility(View.VISIBLE);
-                    final TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
-                    ivNose.setVisibility(View.VISIBLE);
+                    RelativeLayout ivNoseLayout = (RelativeLayout) findViewById(R.id.ivNoseLayout);
+                    TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
+                    ivNoseLayout.setVisibility(View.VISIBLE);
                     ImageView ivEngine = (ImageView) findViewById(R.id.ivEngine);
                     ImageView ivImageOk = (ImageView) findViewById(R.id.ivImageOk);
                     ivImage.setVisibility(View.INVISIBLE);
@@ -147,13 +149,14 @@ public class MenuActivity extends ActionBarActivity {
                     bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
                     ImageView ivImage = (ImageView) findViewById(R.id.ivImage);
                     ImageView ivPutNose = (ImageView) findViewById(R.id.ivPutNose);
-                    final TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
+                    RelativeLayout ivNoseLayout = (RelativeLayout) findViewById(R.id.ivNoseLayout);
+                    TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
                     ImageView ivEngine = (ImageView) findViewById(R.id.ivEngine);
                     ImageView ivImageOk = (ImageView) findViewById(R.id.ivImageOk);
                     ivImage.setVisibility(View.INVISIBLE);
                     ivPutNose.setImageBitmap(bitmap);
                     ivPutNose.setVisibility(View.VISIBLE);
-                    ivNose.setVisibility(View.VISIBLE);
+                    ivNoseLayout.setVisibility(View.VISIBLE);
                     ivNose.setAdjustViewBounds(true);
                     ivEngine.setVisibility(View.VISIBLE);
                     ivImageOk.setVisibility(View.INVISIBLE);
@@ -218,14 +221,15 @@ public class MenuActivity extends ActionBarActivity {
                 } else if (items[item].equals(getString(R.string.choose_another))) {
                     ImageView ivImage = (ImageView) findViewById(R.id.ivImage);
                     ImageView ivPutNose = (ImageView) findViewById(R.id.ivPutNose);
-                    final TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
+                    RelativeLayout ivNoseLayout = (RelativeLayout) findViewById(R.id.ivNoseLayout);
+                    TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
                     ImageView ivEngine = (ImageView) findViewById(R.id.ivEngine);
                     ImageView ivImageOk = (ImageView) findViewById(R.id.ivImageOk);
                     ivImage.setVisibility(View.VISIBLE);
                     ivPutNose.setImageResource(0);
                     ivPutNose.destroyDrawingCache();
                     ivPutNose.setVisibility(View.INVISIBLE);
-                    ivNose.setVisibility(View.INVISIBLE);
+                    ivNoseLayout.setVisibility(View.INVISIBLE);
                     ivEngine.setVisibility(View.INVISIBLE);
                     ivImageOk.setImageResource(0);
                     ivImageOk.destroyDrawingCache();
@@ -240,7 +244,8 @@ public class MenuActivity extends ActionBarActivity {
     private void savePhoto(){
         ImageView ivImage = (ImageView) findViewById(R.id.ivImage);
         ImageView ivPutNose = (ImageView) findViewById(R.id.ivPutNose);
-        final TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
+        RelativeLayout ivNoseLayout = (RelativeLayout) findViewById(R.id.ivNoseLayout);
+        TouchImageView ivNose = (TouchImageView) findViewById(R.id.ivNose);
         ImageView ivEngine = (ImageView) findViewById(R.id.ivEngine);
         ImageView ivImageOk = (ImageView) findViewById(R.id.ivImageOk);
 
@@ -267,7 +272,7 @@ public class MenuActivity extends ActionBarActivity {
         ivPutNose.setImageResource(0);
         ivPutNose.destroyDrawingCache();
         ivPutNose.setVisibility(View.INVISIBLE);
-        ivNose.setVisibility(View.INVISIBLE);
+        ivNoseLayout.setVisibility(View.INVISIBLE);
         ivEngine.setVisibility(View.VISIBLE);
 
         ivImageOk.setDrawingCacheEnabled(true);
