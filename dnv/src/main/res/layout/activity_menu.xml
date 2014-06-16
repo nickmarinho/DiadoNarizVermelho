@@ -34,7 +34,7 @@
         android:layout_height="match_parent"
         android:focusableInTouchMode="true"
         android:src="@drawable/ic_nose"
-        android:visibility="invisible"
+        android:visibility="visible"
     />
 
     <ImageView
