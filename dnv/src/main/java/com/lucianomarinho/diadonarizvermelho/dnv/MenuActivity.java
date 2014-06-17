@@ -35,6 +35,9 @@ public class MenuActivity extends ActionBarActivity {
     private AdView adView;
     String mCurrentPhotoPath;
 
+    // Declare an instance variable for your MoPubView.
+    private MoPubView moPubView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,11 @@ public class MenuActivity extends ActionBarActivity {
         adView = (AdView)this.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
+
+        moPubView = (MoPubView) findViewById(R.id.adview);
+        moPubView.setAdUnitId("1a99cd0bc11b47a29d423864323799be");
+        moPubView.loadAd();
+        moPubView.setBannerAdListener(this);
 
         startApp();
 
@@ -320,6 +328,9 @@ public class MenuActivity extends ActionBarActivity {
     public void onDestroy() {
         if (adView != null) {
             adView.destroy();
+        }
+        if (moPubView != null) {
+            moPubView.destroy();
         }
         super.onDestroy();
     }
